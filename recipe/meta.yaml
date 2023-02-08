@@ -24,14 +24,16 @@ requirements:
     - numpy
     - pandas
     - protobuf ==3.20.*
-    - polars ==0.14.*
+    - polars >=0.16.0
     - psutil
     - pyarrow
     - python >=3.6
+    - python-duckdb >=0.6.0
     - python-graphviz
     - ray-core
     - redis-py
     - sqlglot
+    - tqdm
 
 test:
   commands:

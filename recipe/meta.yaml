@@ -1,5 +1,5 @@
 {% set name = "pyquokka" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/marsupialtail/quokka/archive/v{{ version }}.tar.gz
-  sha256: 546e33493ffb781f045c769abd7c72003566003998141162180be1aa79cc53dd
+  sha256: becc2828437bac4f4cfb113a23a0463f988ea92fe7231322bd0d8d839376bd63
 
 build:
   noarch: python
@@ -24,14 +24,16 @@ requirements:
     - numpy
     - pandas
     - protobuf ==3.20.*
-    - polars ==0.14.*
+    - polars >=0.16.0
     - psutil
     - pyarrow
     - python >=3.6
+    - python-duckdb >=0.6.0
     - python-graphviz
     - ray-core
     - redis-py
     - sqlglot
+    - tqdm
 
 test:
   commands:

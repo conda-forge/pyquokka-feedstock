@@ -1,5 +1,5 @@
 {% set name = "pyquokka" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/marsupialtail/quokka/archive/v{{ version }}.tar.gz
-  sha256: 546e33493ffb781f045c769abd7c72003566003998141162180be1aa79cc53dd
+  sha256: 608d32820ee756c271ed9eadbd42cf72e709162ba7a14104a46ded2525d3a9c1
 
 build:
   noarch: python

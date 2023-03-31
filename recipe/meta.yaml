@@ -19,19 +19,24 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - aiohttp
     - boto3
+    - botocore
     - h5py
     - numpy
     - pandas
-    - protobuf ==3.20.*
-    - polars ==0.14.*
+    - parallel-ssh
+    - protobuf
+    - polars >=0.16.8
     - psutil
     - pyarrow
     - python >=3.6
+    - python-duckdb >=0.6.0
     - python-graphviz
-    - ray-core
+    - ray-core >=2.0.0
     - redis-py
     - sqlglot
+    - tqdm
 
 test:
   commands:

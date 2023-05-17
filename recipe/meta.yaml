@@ -22,12 +22,14 @@ requirements:
     - aiohttp
     - boto3
     - botocore
+    - cffi
     - h5py
+    - ldbpy
     - numpy
     - pandas
     - parallel-ssh
     - protobuf
-    - polars >=0.16.8
+    - polars >=0.17.0
     - psutil
     - pyarrow
     - python >=3.6
@@ -35,7 +37,8 @@ requirements:
     - python-graphviz
     - ray-core >=2.0.0
     - redis-py
-    - sqlglot
+    - sqlglot >=11.4.2
+    - threadpoolctl
     - tqdm
 
 test:

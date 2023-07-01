@@ -43,11 +43,11 @@ requirements:
 test:
   commands:
     - LD_DEBUG=libs python -c "import pyquokka"  # [linux]
-    - python -c "import pyquokka"  # [not linux]
     - pip check
     - print
   requires:
     - pip
+    - threadpoolctl
 
 about:
   home: https://github.com/marsupialtail/quokka

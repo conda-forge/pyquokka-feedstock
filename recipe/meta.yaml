@@ -13,8 +13,6 @@ build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
-  entry_points:
-    - print=pyquokka.utils:print_hello
 
 requirements:
   host:
@@ -44,7 +42,6 @@ test:
   commands:
     - LD_DEBUG=libs python -c "import pyquokka"  # [linux]
     - pip check
-    - print
   requires:
     - pip
     - threadpoolctl

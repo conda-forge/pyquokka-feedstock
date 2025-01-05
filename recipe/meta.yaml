@@ -29,7 +29,7 @@ requirements:
     - protobuf
     - polars >=0.17.0
     - psutil
-    - pyarrow
+    - pyarrow-all
     - python >={{ python_min }}
     - python-duckdb >=0.6.0
     - python-graphviz

@@ -18,6 +18,7 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
   run:
     - aiohttp
     - boto3
@@ -34,7 +35,8 @@ requirements:
     - python-graphviz
     - ray-core >=2.0.0
     - redis-py
-    - sqlglot >=11.4.2
+    # sqlglot depreated pyspark support in v24
+    - sqlglot >=11.4.2,<24.0.0
     - threadpoolctl
     - tqdm
 
